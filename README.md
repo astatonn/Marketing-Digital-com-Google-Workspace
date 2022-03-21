@@ -1,4 +1,24 @@
-# Marketing-Digital-com-Google-Workspace
-Projeto da Cadeira de LABORATÓRIO DE SOFTWARE E PROJETOS 2022/1 - Lucas Lima, Flora Santiago, Filipe Padilha
+# vue-project-autom
 
-<a href="https://docs.google.com/document/d/1eOOMOofuuXGu5uqMa4ReT73d2BZBQ-_K0DUSBNY-k_A/edit?usp=sharing">Artigo</a>
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
