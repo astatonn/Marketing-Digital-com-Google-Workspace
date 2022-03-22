@@ -1,5 +1,15 @@
-.photo1 {
+.overflow-hidden {
   background-image: url("../img/rectangle9.png");
   background-repeat: no-repeat;
+  position: static;
+  background-position:  center top;
 }
 
+.logo {
+  margin: auto auto;
+  position: absolute;
+}
+
+.cor_letras_menu {
+  color: white;
+}
