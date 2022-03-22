@@ -1,23 +1,16 @@
 # Marketing-Digital-com-Google-Workspace
-Projeto da Cadeira de LABORATÓRIO DE SOFTWARE E PROJETOS 2022/1 - Lucas Lima, Flora Santiago, Filipe Padilha
+Projeto da Cadeira de LABORATÓRIO DE SOFTWARE E PROJETOS 2022/1 - 
 <a href="https://docs.google.com/document/d/1eOOMOofuuXGu5uqMa4ReT73d2BZBQ-_K0DUSBNY-k_A/edit?usp=sharing">Artigo</a>
 # Título do projeto
 
-Um parágrafo da descrição do projeto vai aqui
 
-## 🚀 Começando
 
-Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
+### 📋 Requisitos
 
-Consulte **Implantação** para saber como implantar o projeto.
-
-### 📋 Pré-requisitos
-
-De que coisas você precisa para instalar o software e como instalá-lo?
-
-```
-Dar exemplos
-```
+<b>Requisitos Funcionais</b>
+  <ul>
+    <li>Capacidade de envio de e-mail a partir de informações coletadas de formulário</li>
+  </ul>
 
 ### 🔧 Instalação
 
@@ -79,24 +72,9 @@ Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as vers�
 
 ## ✒️ Autores
 
-Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
+Lucas Lima, Flora Santiago, Filipe Padilha
 
 * **Um desenvolvedor** - *Trabalho Inicial* - [umdesenvolvedor](https://github.com/linkParaPerfil)
 * **Fulano De Tal** - *Documentação* - [fulanodetal](https://github.com/linkParaPerfil)
 
 Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
-
-## 📄 Licença
-
-Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](https://github.com/usuario/projeto/licenca) para detalhes.
-
-## 🎁 Expressões de gratidão
-
-* Conte a outras pessoas sobre este projeto 📢
-* Convide alguém da equipe para uma cerveja 🍺 
-* Obrigado publicamente 🤓.
-* etc.
-
-
----
-⌨️ com ❤️ por [Armstrong Lohãns](https://gist.github.com/lohhans) 😊
