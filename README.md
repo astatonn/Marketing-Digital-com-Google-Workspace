@@ -7,10 +7,13 @@ Projeto da Cadeira de LABORATÓRIO DE SOFTWARE E PROJETOS 2022/1 -
 
 ### 📋 Requisitos
 
-<b>Requisitos Funcionais</b>
-  <ul>
-    <li>Capacidade de envio de e-mail a partir de informações coletadas de formulário</li>
-  </ul>
+  <b>Requisitos Funcionais</b>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
 
 ### 🔧 Instalação
 
