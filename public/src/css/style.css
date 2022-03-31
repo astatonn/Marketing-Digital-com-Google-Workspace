@@ -2,18 +2,23 @@
 	background-image: url("../img/rectangle9.png");
 	height: 1000px;
 	background-position: center top;
-	width: 100%;
 }
 
-.cor_letras_menu {
+.cabecalho_menu {
 	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
-	
+
+.cor_letras_menu:hover {
+	text-decoration: underline;
+}
+  
 .caixa_redes {
-	padding-right: 15px;
+	padding-right: 90px;
 	display: flex;
 	justify-content: end;
-	width: 100%;
 }
 
 .letras_rectangle9_primeira{
@@ -26,11 +31,44 @@
 .letras_rectangle9_segunda{
 	font-size: 25px;
 	text-align: center;
-	margin-top: 35px
 }
 
 .botao_saiba_mais {
 	margin-top: 90px;
 	text-align:center;
-	
 }
+
+.letra_titulos {
+	font-size: 40px;
+	text-align: center;
+}
+
+.letra_titulos2 {
+	font-size: 25px;
+	color: rgb(61, 61, 61);
+	text-align: center;
+}
+
+.recurso_imagens {
+	display: absolute;
+}
+
+.card-deck {
+	display: flex;
+}
+
+@media screen and (min-width: 0) {
+	.cabecalho {
+		justify-content: center;
+		padding: 0 5rem;
+		font-size: 1px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.cabecalho {
+		padding: 0 5rem;
+		justify-content: space-between;
+	}
+}
+
