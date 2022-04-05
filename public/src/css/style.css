@@ -1,7 +1,9 @@
 .topo_home {
 	background-image: url("../img/rectangle9.png");
-	height: 1000px;
-	background-position: center top;
+	height: 100%;
+	max-height: 800px;
+	background-size: cover;
+	background-position: center bottom;
 }
 
 .cabecalho_menu {
@@ -16,7 +18,7 @@
 }
   
 .caixa_redes {
-	padding-right: 90px;
+	padding-right: 11px;
 	display: flex;
 	justify-content: end;
 }
@@ -38,15 +40,44 @@
 	text-align:center;
 }
 
-.letra_titulos {
+.botao_saiba_mais2 {
+	margin-top: 35px;
+	text-align:center;
+}
+
+.letra_titulos_recursos {
 	font-size: 40px;
 	text-align: center;
 }
 
-.letra_titulos2 {
+.letra_titulos_recursos2 {
 	font-size: 25px;
 	color: rgb(61, 61, 61);
 	text-align: center;
+}
+
+.letra_titulos_ferramenta {
+	font-size: 40px;
+}
+
+.letra_titulos_ferramenta2 {
+	font-size: 25px;
+	color: rgb(61, 61, 61);
+}
+
+.letra_titulos_ferramentapeq {
+	font-size: 12px;
+	color: rgb(61, 61, 61);
+}
+
+.alinhamento_texto{
+	text-align: left;
+	vertical-align: middle;
+}
+
+.alinhamento_texto2 {
+	text-align: left;
+	vertical-align: middle;
 }
 
 .recurso_imagens {
@@ -56,19 +87,3 @@
 .card-deck {
 	display: flex;
 }
-
-@media screen and (min-width: 0) {
-	.cabecalho {
-		justify-content: center;
-		padding: 0 5rem;
-		font-size: 1px;
-	}
-}
-
-@media screen and (min-width: 768px) {
-	.cabecalho {
-		padding: 0 5rem;
-		justify-content: space-between;
-	}
-}
-
