@@ -45,29 +45,36 @@
 	text-align:center;
 }
 
+.botao_saiba_mais3 {
+	text-align:center;
+}
+
 .letra_titulos_recursos {
-	font-size: 40px;
+	font-size: 25px;
 	text-align: center;
 }
 
 .letra_titulos_recursos2 {
-	font-size: 25px;
+	font-size: 20px;
 	color: rgb(61, 61, 61);
 	text-align: center;
+	padding-top: 20px;
 }
 
 .letra_titulos_ferramenta {
-	font-size: 40px;
+	font-size: 25px;
+	padding-top: 10px;
 }
 
 .letra_titulos_ferramenta2 {
-	font-size: 25px;
+	font-size: 20px;
 	color: rgb(61, 61, 61);
 }
 
 .letra_titulos_ferramentapeq {
 	font-size: 12px;
 	color: rgb(61, 61, 61);
+	padding-top: 10px;
 }
 
 .alinhamento_texto{
@@ -86,4 +93,40 @@
 
 .card-deck {
 	display: flex;
+}
+
+.ajuste_box {
+	height: 336px;
+}
+
+.precos {
+	background-color: #5E2122;
+}
+
+
+/*Mobile*/
+
+@media screen and (max-width: 798px) {
+	.topo_home {
+		background-image: url("../img/rectangle9.png");
+		height: 100%;
+		max-height: 750px;
+		background-size: cover;
+		background-position: center bottom;
+	}
+	
+	.letras_rectangle9_primeira{
+		font-size: 35px;
+		font-weight: bold;
+		text-align: center;
+		margin-top: 100px;
+	}
+	.letras_rectangle9_segunda{
+		font-size: 20px;
+		text-align: center;
+		margin-top: 50px;
+	}
+
+
+
 }
