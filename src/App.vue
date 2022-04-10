@@ -81,7 +81,8 @@
 
                 <v-spacer></v-spacer>
 
-                <div class="d-none d-sm-flex"
+                <div 
+                    class="d-none d-sm-flex"
                     v-for="item in items_menu_all"
                     :key="item.title"
                 >
@@ -94,46 +95,52 @@
 
             <v-main>
                 <!-- Imagem tela principal -->
-                <v-container class="topo_home mb-15" fluid>
-                    <div class="caixa_redes">
+                <v-container 
+                    class="top_home mb-15"
+                    fluid
+                    >
+                    <div 
+                        v-for="item in items_redes_sociais"
+                        :key="item.icon"
+                        class="d-flex pr-4 justify-end"
+                    >
                         <v-btn icon>
-                            <v-icon color="white"> mdi-twitter </v-icon>
-                        </v-btn>
-
-                        <v-btn icon>
-                            <v-icon color="white"> mdi-facebook </v-icon>
-                        </v-btn>
-
-                        <v-btn icon>
-                            <v-icon color="white"> mdi-linkedin</v-icon>
+                            <v-icon color="white"> {{ item.icon }} </v-icon>
                         </v-btn>
                     </div>
 
-                    <div class="letras_rectangle9_primeira white--text">
+                    <p class="letters_main_big white--text">
                         Alcance novos horizontes <br />
                         com o seu negócio
-                    </div>
+                    </p>
 
-                    <div class="letras_rectangle9_segunda white--text">
+                    <p class="letters_main_medium white--text">
                         Uma nova forma de realizar suas campanhas de Marketing
                         <br />
                         Digital para captação de clientes.
-                    </div>
+                    </p>
 
-                    <div class="botao_saiba_mais">
-                        <v-btn rounded color="#AB2B2D" dark width="200" large>
+                    <div class="botao_saiba_mais mt-16">
+                        <v-btn 
+                            rounded color="#AB2B2D"
+                            dark width="200"
+                            large
+                            >
                             Saiba Mais
                         </v-btn>
                     </div>
                 </v-container>
 
                 <!-- Recursos -->
-                <v-container class="recursos mb-15" fluid>
-                    <div class="letra_titulos_recursos">Recursos</div>
-                    <div class="letra_titulos_recursos2">
+                <v-container
+                    class="recursos mb-15"
+                    fluid
+                    >
+                    <h1 class=" text-center">Recursos</h1>
+                    <h2 class="grey--text font-weight-regular text-center mt-5">
                         Descubra as vantagens das ferramentas disponíveis<br />dos
                         sistemas AutoM
-                    </div>
+                    </h2>
                 </v-container>
 
                 <!-- 3 Ícones -->
@@ -366,7 +373,11 @@ export default {
             {title:'Sobre'},
             {title:'Contato'},
         ],
-
+        items_redes_sociais: [
+            {icon:'mdi-twitter'},
+            {icon:'mdi-facebook'},
+            {icon:'mdi-linkedin'},
+        ],
         articles: [
             {
                 src: "src/img/Vector1.png",

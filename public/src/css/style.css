@@ -1,16 +1,31 @@
-.topo_home {
+.top_home {
 	background-image: url("../img/rectangle9.png");
 	height: 100%;
 	max-height: 800px;
 	background-size: cover;
 	background-position: center bottom;
 }
-  
-.caixa_redes {
-	padding-right: 11px;
-	display: flex;
-	justify-content: end;
+
+.letters_main_big{
+	font-size: 60px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 200px;
 }
+
+.letters_main_medium{
+	font-size: 25px;
+	text-align: center;
+}
+
+.botao_saiba_mais {
+	text-align:center;
+}
+
+
+
+
+
 
 .letras_rectangle9_primeira{
 	font-size: 60px;
@@ -23,11 +38,10 @@
 	font-size: 25px;
 	text-align: center;
 }
+  
 
-.botao_saiba_mais {
-	margin-top: 90px;
-	text-align:center;
-}
+
+
 
 .botao_saiba_mais2 {
 	margin-top: 35px;
@@ -96,7 +110,7 @@
 /*Mobile*/
 
 @media screen and (max-width: 798px) {
-	.topo_home {
+	.top_home {
 		background-image: url("../img/rectangle9.png");
 		height: 100%;
 		max-height: 750px;
@@ -104,13 +118,14 @@
 		background-position: center bottom;
 	}
 	
-	.letras_rectangle9_primeira{
+	.letters_main_big{
 		font-size: 35px;
 		font-weight: bold;
 		text-align: center;
 		margin-top: 100px;
 	}
-	.letras_rectangle9_segunda{
+
+	.letters_main_medium{
 		font-size: 20px;
 		text-align: center;
 		margin-top: 50px;
