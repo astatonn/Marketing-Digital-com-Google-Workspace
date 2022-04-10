@@ -133,11 +133,11 @@
 
                 <!-- Recursos -->
                 <v-container
-                    class="recursos mb-15"
+                    class="color recursos mb-15"
                     fluid
                     >
-                    <h1 class=" text-center">Recursos</h1>
-                    <h2 class="grey--text font-weight-regular text-center mt-5">
+                    <h1 class="text-center">Recursos</h1>
+                    <h2 class="font-weight-regular text-center mt-5">
                         Descubra as vantagens das ferramentas disponíveis<br />dos
                         sistemas AutoM
                     </h2>
@@ -164,16 +164,12 @@
                                 ></v-img>
 
                                 <h3
-                                    class="
-                                        font-weight-black
-                                        mb-4
-                                        text-uppercase
-                                    "
+                                    class="font-weight-black text-uppercase"
                                     v-text="title"
                                 ></h3>
 
                                 <div
-                                    class="title font-weight-light mb-5"
+                                    class=" color title font-weight-regular mb-5"
                                     v-text="text"
                                 ></div>
                             </div>
