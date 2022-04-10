@@ -1,47 +1,78 @@
 <template>
     <div id="app">
         <v-app id="inspire">
-            <v-navigation-drawer v-model="drawer" absolute temporary app>
-                <v-list nav dense>
-                    <v-list-item-group
+            
+            <!-- Sandwich esquerda -->
+            <v-navigation-drawer 
+                v-model="drawer" 
+                absolute 
+                temporary 
+                app
+            >
+                <template v-slot:prepend>
+                    <v-list-item 
+                        two-line 
+                        >
+                        <v-list-item-avatar>
+                            <img src="https://tc.com.br/wp-content/uploads/2021/07/steve-jobs.jpg" alt="John">
+                        </v-list-item-avatar>
+            
+                        <v-list-item-content>
+                            <v-list-item-title>José Maria</v-list-item-title>
+                            <v-list-item-subtitle>Online</v-list-item-subtitle>
+                        </v-list-item-content>
+                    </v-list-item>
+                </template>
+  
+                <v-divider></v-divider>
+
+                <v-list class="py-4">
+                    <v-list-item
+                        nav dense
                         active-class="deep-purple--text text--accent-4"
+                        v-for="item in items_login"
+                        :key="item.title"
+                        link
                     >
-                        <v-sheet>
-                            <v-avatar>
-                                <img
-                                    src="https://tc.com.br/wp-content/uploads/2021/07/steve-jobs.jpg"
-                                    alt="John"
-                                />
-                            </v-avatar>
+                        <v-list-item-icon>
+                            <v-icon>{{ item.icon }}</v-icon>
+                        </v-list-item-icon>
 
-                            <div>josemaria@gmail.com</div>
-                        </v-sheet>
-
-                        <v-list-item>
-                            <v-list-item-icon>
-                                <v-icon>mdi-account</v-icon>
-                            </v-list-item-icon>
-                            <v-list-item-title>Conta</v-list-item-title>
-                        </v-list-item>
-
-                        <v-list-item>
-                            <v-list-item-icon>
-                                <v-icon>mdi-cart</v-icon>
-                            </v-list-item-icon>
-                            <v-list-item-title>Assinatura</v-list-item-title>
-                        </v-list-item>
-
-                        <v-list-item>
-                            <v-list-item-icon>
-                                <v-icon>mdi-logout</v-icon>
-                            </v-list-item-icon>
-                            <v-list-item-title>Logout</v-list-item-title>
-                        </v-list-item>
-                    </v-list-item-group>
+                        <v-list-item-content>
+                            <v-list-item-title>{{ item.title }}</v-list-item-title>
+                        </v-list-item-content>
+                    </v-list-item>
                 </v-list>
+
+                <v-divider class="d-sm-none"></v-divider>
+
+                <v-list class="py-4 d-sm-none">
+                    <v-list-item
+                        nav dense
+                        active-class="deep-purple--text text--accent-4"
+                        v-for="item in items_menu_xs"
+                        :key="item.title"
+                        link
+                    >
+                        <v-list-item-icon>
+                            <v-icon>{{ item.icon }}</v-icon>
+                        </v-list-item-icon>
+
+                        <v-list-item-content>
+                            <v-list-item-title>{{ item.title }}</v-list-item-title>
+                        </v-list-item-content>
+                    </v-list-item>
+                </v-list>
+
             </v-navigation-drawer>
 
-            <v-app-bar app extension flat width="100%" class="cabecalho">
+            <!-- Menu -->
+            <v-app-bar
+                app 
+                extension 
+                flat
+                width="100%"
+                >
                 <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
 
                 <v-avatar class="logo" tile size="70">
@@ -50,28 +81,19 @@
 
                 <v-spacer></v-spacer>
 
-                <v-btn text class="cabecalho_menu d-none d-sm-flex">
-                    Home
-                </v-btn>
+                <div class="d-none d-sm-flex"
+                    v-for="item in items_menu_all"
+                    :key="item.title"
+                >
+                    <v-btn text>
+                        {{ item.title }}
+                    </v-btn>
+                </div>
 
-                <v-btn text class="cabecalho_menu d-none d-sm-flex">
-                    Produtos
-                </v-btn>
-
-                <v-btn text class="cabecalho_menu d-none d-sm-flex">
-                    Preços
-                </v-btn>
-
-                <v-btn text class="cabecalho_menu d-none d-sm-flex">
-                    Sobre
-                </v-btn>
-
-                <v-btn text class="cabecalho_menu d-none d-sm-flex">
-                    Contato
-                </v-btn>
             </v-app-bar>
 
             <v-main>
+                <!-- Imagem tela principal -->
                 <v-container class="topo_home mb-15" fluid>
                     <div class="caixa_redes">
                         <v-btn icon>
@@ -105,6 +127,7 @@
                     </div>
                 </v-container>
 
+                <!-- Recursos -->
                 <v-container class="recursos mb-15" fluid>
                     <div class="letra_titulos_recursos">Recursos</div>
                     <div class="letra_titulos_recursos2">
@@ -113,6 +136,7 @@
                     </div>
                 </v-container>
 
+                <!-- 3 Ícones -->
                 <v-container class="text-center mb-15">
                     <v-row>
                         <v-col
@@ -150,103 +174,103 @@
                     </v-row>
                 </v-container>
 
+                <!-- Imagem mulher -->
                 <v-container class="mb-15">
                     <div>
                         <v-img src="src/img/screen.png"></v-img>
                     </div>
                 </v-container>
 
-                <v-container class="mb-15">
-                    <v-row no-gutters>
-                        <v-col sm="6" md="5" lg="6">
-                            <v-card class="pa-2" tile elevation="0">
-                                <v-container
-                                    class="alinhamento_texto ajuste_box"
-                                >
-                                    <div class="letra_titulos_ferramenta">
-                                        A melhor maneira para <br />
-                                        expandir seu negócio
-                                    </div>
-                                    <div class="letra_titulos_ferramenta2">
-                                        A ferramenta AutoM garante a<br />captação
-                                        de novos clientes com<br />preços
-                                        acessíveis
-                                    </div>
-                                    <div class="botao_saiba_mais2">
-                                        <v-btn
-                                            rounded
-                                            color="#AB2B2D"
-                                            dark
-                                            width="200"
-                                            large
-                                        >
-                                            Saiba Mais
-                                        </v-btn>
-                                    </div>
-                                </v-container>
-                            </v-card>
+                <!-- Notebook + Homem -->
+                <v-container class="text-center mb-15">
+                    <v-row
+                        v-for="({ src, text }, i) in text_img1"
+                        :key="i"
+                        justify="space-around"
+                        style="height: 400px"
+                    >
+                        <v-col
+                            md="4"
+                        >
+                            <div
+                                class="d-flex flex-row"
+                            >
+                                <v-img
+                                    :src="src"
+                                    class="mb-4"
+                                    max-width="400"
+                                ></v-img>
+                            </div>
                         </v-col>
+                        <v-col
+                            md="4"
+                        >
+                            <div
+                                class="title font-weight-light mb-5"
+                                v-text="text"
+                            ></div>
+                            <div class="botao_saiba_mais2">
+                                <v-btn
+                                    rounded
+                                    color="#AB2B2D"
+                                    dark
+                                    width="200"
+                                    large
+                                >
+                                    Saiba Mais
+                                </v-btn>
+                            </div>
+                        </v-col>
+                    </v-row>
 
-                        <v-col sm="6" md="5" lg="6">
-                            <v-card class="pa-2" tile elevation="0">
-                                <div class="ajuste_box">
-                                    <v-img
-                                        src="src/img/foto_notebook.png"
-                                        max-width="400"
-                                    ></v-img>
-                                </div>
-                            </v-card>
+
+
+                    <v-row
+                        v-for="({ src, text }, i) in text_img2"
+                        :key="i"
+                        justify="space-around"
+                        style="height: 400px"
+                    >
+                        <v-col
+                            md="4"
+                        >
+                            <div
+                                class="title font-weight-light mb-5"
+                                v-text="text"
+                            ></div>
+
+                            <div class="botao_saiba_mais2">
+                                <v-btn
+                                    rounded
+                                    color="#AB2B2D"
+                                    dark
+                                    width="200"
+                                    large
+                                >
+                                    Saiba Mais
+                                </v-btn>
+                            </div>
+                        </v-col>
+                        <v-col
+                            md="4"
+                        >
+                            <div
+                                class="d-flex flex-row"
+                                style="align-text: start"
+                            >
+                                <v-img
+                                    :src="src"
+                                    class="mb-4"
+                                    max-width="400"
+
+                                ></v-img>
+                            </div>
+
                         </v-col>
                     </v-row>
                 </v-container>
 
-                <v-container  class="mb-15">
-                    <v-row no-gutters>
-                        <v-col sm="6" md="5" lg="6">
-                            <v-card class="pa-2" tile elevation="0">
-                                <div class="ajuste_box">
-                                    <v-img
-                                        src="src/img/imagem_crie_links.png"
-                                        max-width="400"
-                                    ></v-img>
-                                </div>
-                            </v-card>
-                        </v-col>
-
-                        <v-col sm="6" md="5" lg="6">
-                            <v-card class="pa-2" tile elevation="0">
-                                <v-container
-                                    class="alinhamento_texto2 ajuste_box"
-                                >
-                                    <div class="letra_titulos_ferramentapeq">
-                                        <b>Na ponta dos seus dedos</b>
-                                    </div>
-                                    <div class="letra_titulos_ferramenta">
-                                        Crie links para suas <br />
-                                        redes sociais.
-                                    </div>
-                                    <div class="letra_titulos_ferramentapeq">
-                                        Whatsapp, Instagram, Facebook e muito
-                                        mais<br />
-                                        em um só e-mail de contato.
-                                    </div>
-                                    <div class="botao_saiba_mais2">
-                                        <v-btn
-                                            rounded
-                                            color="#AB2B2D"
-                                            dark
-                                            width="200"
-                                            large
-                                        >
-                                            Saiba Mais
-                                        </v-btn>
-                                    </div>
-                                </v-container>
-                            </v-card>
-                        </v-col>
-                    </v-row>
-                </v-container>
-
+                <!-- Ferramentas Utilizadas -->
                 <v-container>
                     <div class="letra_titulos_recursos">
                         Ferramentas Utilizadas
@@ -255,11 +279,9 @@
                         Os sistemas AutoM utilizam as seguintes ferramentas<br />
                         para garantir a entrega dos serviços.
                     </div>
-				</v-container>
-					
-				<v-container class="mb-15">
-					<v-row>
-					<v-col class="d-flex">
+
+                    <v-row>
+					<v-col class="d-flex mt-16">
 						<v-spacer></v-spacer>
 						<v-img src="src/img/canvas.png" max-width="150"></v-img>
 						<v-img src="src/img/google.png" max-width="150"></v-img>
@@ -272,8 +294,10 @@
                             Saiba Mais
                         </v-btn>
                     </div>
+
 				</v-container>
                 
+                <!-- Feedbacks -->
                 <v-container class="recursos mb-15" fluid>
                     <div class="letra_titulos_recursos">Feedbacks</div>
                     <div>
@@ -293,6 +317,7 @@
                     </div>
                 </v-container>
 
+                <!-- Preços -->
                 <v-container class="precos mb-15">
                     <div class="letra_titulos_recursos white--text">Preços</div>
                     <div class="letra_titulos_recursos2 white--text">
@@ -300,6 +325,7 @@
                     </div>
                 </v-container>
 
+                <!-- Contate -->
                 <v-container class="mb-15">
                     <div class="letra_titulos_recursos">Contate-nos</div>
                     <div class="letra_titulos_recursos2">
@@ -307,6 +333,7 @@
                     </div>
                 </v-container>
 
+                <!-- Footer -->
                 <v-container class="precos mb-15">
                     
                 </v-container>
@@ -321,11 +348,25 @@
 export default {
     data: () => ({
         drawer: null,
-        links: [
-            ["mdi-account", "Conta"],
-            ["mdi-cart", "Assinatura"],
-            ["mdi-logout", "Logout"],
+        items_login: [
+            {title:'Conta', icon:'mdi-account'},
+            {title:'Assinatura', icon:'mdi-cart'},
+            {title:'Logout', icon:'mdi-logout'},
         ],
+        items_menu_xs: [
+            {title:'PRODUTOS', icon:'mdi-package-variant-closed'},
+            {title:'PREÇOS', icon:'mdi-currency-usd'},
+            {title:'SOBRE', icon:'mdi-information-outline'},
+            {title:'CONTATO', icon:'mdi-bullhorn'},
+        ],
+        items_menu_all: [
+            {title:'Home'},
+            {title:'Produtos'},
+            {title:'Preços'},
+            {title:'Sobre'},
+            {title:'Contato'},
+        ],
+
         articles: [
             {
                 src: "src/img/Vector1.png",
@@ -341,6 +382,18 @@ export default {
                 src: "src/img/Vector2.png",
                 title: "Conteúdo personalizável",
                 text: "Os serviços AutoM possibilitam criar modelos totalmente personalizáveis",
+            },
+        ],
+        text_img1: [
+            {
+                src: "src/img/foto_notebook.png",
+                text: "Com o sistema de agendamento é possível programar campanhas automáticas para envio de conteúdo para seus clientes.",
+            },
+        ],
+        text_img2: [
+            {
+                src: "src/img/imagem_crie_links.png",
+                text: "Obtenha estatísticas do seu público e crie campanhas específicas para cada grupo",
             },
         ],
     }),

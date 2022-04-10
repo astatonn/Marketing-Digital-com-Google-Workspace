@@ -5,17 +5,6 @@
 	background-size: cover;
 	background-position: center bottom;
 }
-
-.cabecalho_menu {
-	position: absolute;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.cor_letras_menu:hover {
-	text-decoration: underline;
-}
   
 .caixa_redes {
 	padding-right: 11px;
