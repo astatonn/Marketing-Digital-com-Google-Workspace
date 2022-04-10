@@ -96,7 +96,7 @@
             <v-main>
                 <!-- Imagem tela principal -->
                 <v-container 
-                    class="top_home mb-15"
+                    class="top_home py-15"
                     fluid
                     >
                     <div 
@@ -133,7 +133,7 @@
 
                 <!-- Recursos -->
                 <v-container
-                    class="color recursos mb-15"
+                    class="color recursos py-15"
                     fluid
                     >
                     <h1 class="text-center">Recursos</h1>
@@ -144,7 +144,7 @@
                 </v-container>
 
                 <!-- 3 Ícones -->
-                <v-container class="text-center mb-15">
+                <v-container class="text-center py-15">
                     <v-row>
                         <v-col
                             v-for="({ src, text, title }, i) in articles"
@@ -178,14 +178,14 @@
                 </v-container>
 
                 <!-- Imagem mulher -->
-                <v-container class="mb-15">
+                <v-container class="py-15">
                     <div>
                         <v-img src="src/img/screen.png"></v-img>
                     </div>
                 </v-container>
 
                 <!-- Notebook + Homem -->
-                <v-container class="text-center mb-15">
+                <v-container class="text-center py-15">
                     <v-row
                         v-for="({ src, text }, i) in text_img1"
                         :key="i"
@@ -212,7 +212,7 @@
                                 class="title font-weight-light mb-5"
                                 v-text="text"
                             ></div>
-                            <div class="botao_saiba_mais2">
+                            <div class="botao_saiba_mais mt-16">
                                 <v-btn
                                     rounded
                                     color="#AB2B2D"
@@ -242,7 +242,7 @@
                                 v-text="text"
                             ></div>
 
-                            <div class="botao_saiba_mais2">
+                            <div class="botao_saiba_mais mt-16">
                                 <v-btn
                                     rounded
                                     color="#AB2B2D"
@@ -274,26 +274,28 @@
                 </v-container>
 
                 <!-- Ferramentas Utilizadas -->
-                <v-container>
-                    <div class="letra_titulos_recursos">
-                        Ferramentas Utilizadas
-                    </div>
-                    <div class="letra_titulos_recursos2">
+                <v-container class="color py-15">
+                    <h1 class="text-center">Ferramentas Utilizadas</h1>
+                    <h2 class="font-weight-regular text-center mt-5">
                         Os sistemas AutoM utilizam as seguintes ferramentas<br />
                         para garantir a entrega dos serviços.
-                    </div>
+                    </h2>
 
                     <v-row>
-					<v-col class="d-flex mt-16">
-						<v-spacer></v-spacer>
-						<v-img src="src/img/canvas.png" max-width="150"></v-img>
-						<v-img src="src/img/google.png" max-width="150"></v-img>
-						<v-spacer></v-spacer>
-					</v-col>
+                        <v-col class="d-flex mt-16">
+                            <v-spacer></v-spacer>
+                            <v-img src="src/img/canvas.png" max-width="150"></v-img>
+                            <v-img src="src/img/google.png" max-width="150"></v-img>
+                            <v-spacer></v-spacer>
+                        </v-col>
 					</v-row>
 
-                    <div class="botao_saiba_mais3 mt-15">
-                        <v-btn rounded color="#AB2B2D" dark width="200" large>
+                    <div class="botao_saiba_mais mt-16">
+                        <v-btn 
+                            rounded color="#AB2B2D"
+                            dark width="200"
+                            large
+                            >
                             Saiba Mais
                         </v-btn>
                     </div>
@@ -301,43 +303,47 @@
 				</v-container>
                 
                 <!-- Feedbacks -->
-                <v-container class="recursos mb-15" fluid>
-                    <div class="letra_titulos_recursos">Feedbacks</div>
+                <v-container class="color recursos py-15" fluid>
+                    <h1 class="text-center">Feedbacks</h1>
                     <div>
 						<v-img></v-img>
                     </div>
-                    <div class="letra_titulos_recursos2">
+                    <h2 class="font-weight-regular text-center mt-5">
                         "Meus lucros cresceram cerca de 36% no primeiro mês e 41% no ano<br />
                         depois que comecei a utilizar a ferramenta AutoM"
-                    </div>
+                    </h2>
                     <div>
 						<v-img></v-img>
                     </div>
-                    <div class="botao_saiba_mais3 mt-15">
-                        <v-btn rounded color="#AB2B2D" dark width="200" large>
-                            Mais feedbacks
+                    <div class="botao_saiba_mais mt-16">
+                        <v-btn 
+                            rounded color="#AB2B2D"
+                            dark width="200"
+                            large
+                            >
+                            Saiba Mais
                         </v-btn>
                     </div>
                 </v-container>
 
                 <!-- Preços -->
-                <v-container class="precos mb-15">
-                    <div class="letra_titulos_recursos white--text">Preços</div>
-                    <div class="letra_titulos_recursos2 white--text">
+                <v-container class="color_back py-15">
+                    <h1 class="text-center white--text">Preços</h1>
+                    <h2 class="font-weight-regular text-center mt-5 white--text">
                         Conheça os planos disponíveis
-                    </div>
+                    </h2>
                 </v-container>
 
                 <!-- Contate -->
-                <v-container class="mb-15">
-                    <div class="letra_titulos_recursos">Contate-nos</div>
-                    <div class="letra_titulos_recursos2">
+                <v-container class="color py-15">
+                    <h1 class="text-center">Contate-nos</h1>
+                    <h2 class="font-weight-regular text-center mt-5">
                         Conheça mais sobre nossos serviços e campanhas disponíveis.
-                    </div>
+                    </h2>
                 </v-container>
 
                 <!-- Footer -->
-                <v-container class="precos mb-15">
+                <v-container class="color_back py-15">
                     
                 </v-container>
 
