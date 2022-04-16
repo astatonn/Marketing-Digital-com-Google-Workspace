@@ -26,6 +26,9 @@
 .color {
 	color: rgb(61, 61, 61);
 }
+.v-icon .color2 {
+	color: #AB2B2D;
+}
 .color_back_red {
 	background-color: #5E2122;
 	color: white;
