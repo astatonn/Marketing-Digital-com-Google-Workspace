@@ -20,6 +20,10 @@
 	font-size: 25px;
 	text-align: center;
 }
+.letters_footer{
+	font-size: 15px;
+	font-family: Roboto;
+}
 .botao_saiba_mais {
 	text-align:center;
 }

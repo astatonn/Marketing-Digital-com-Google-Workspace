@@ -83,7 +83,6 @@
         </div>
       </v-app-bar>
       <v-main>
-        
         <!-- Imagem tela principal -->
         <v-container class="top_home mb-15" fluid>
           <div
@@ -167,7 +166,7 @@
             <v-col sm="6" md="5" lg="6" cols="12" class="d-flex justify-center">
               <v-card class="py-15 elevation-0" max-width="75%">
                 <v-card-title class="text-h4 title font-weight-normal text-wrap"
-                  >A melhor maneira para expandir seu negócio</v-card-title
+                  >A melhor maneira para<br>expandir seu negócio</v-card-title
                 >
                 <v-card-text
                   class="text-h6 title font-weight-light mb-5 text-wrap"
@@ -216,11 +215,10 @@
             <v-col sm="6" md="5" lg="6" cols="12" class="d-flex justify-center">
               <v-card class="py-15 elevation-0" max-width="70%">
                 <v-card-title class="text-h4 title font-weight-normal"
-                  >A melhor maneira para expandir seu negócio</v-card-title
+                  >Crie links para suas<br>redes sociais</v-card-title
                 >
                 <v-card-text class="text-h6 title font-weight-light mb-5"
-                  >A ferramenta AutoM garante a captação de novos clientes com
-                  preços acessíveis</v-card-text
+                  >Whatsapp, Instagram, Facebook e muito mais em um só e-mail de contato.</v-card-text
                 >
                 <v-card-actions class="justify-center">
                   <v-btn
@@ -503,36 +501,57 @@
       </v-main>
 
       <!-- Footer -->
+
       <footer class="my-10">
         <v-container class="color_back_red my-15">
-          <v-row>
-            <v-col cols="12" md="4" class="d-flex flex-row">
-              <v-list-item
-                v-for="item in footer_names"
-                :key="item.title"
-                class="white--text d-flex flex-column"
-              >
-                <v-list-item-icon>
-                  <v-list-item-title class="font-weight-bold">
-                    {{ item.title }}
-                  </v-list-item-title>
-                </v-list-item-icon>
+          <v-card-text class="pt-4 pb-4">
+            <v-layout>
+              <v-flex v-for="(col, i) in rows" :key="i" xs3>
+                <span class="title font-weight-light" v-text="col.title.toUpperCase()"></span>
+                <hr width="90%" />
+                <div
+                  v-for="(child, i) in col.children"
+                  :key="i"
+                  v-text="child"
+                ></div>
+              </v-flex>
+              <v-flex xs3 layout column pr-1>
 
-                <v-list-item-content>
-                  <v-list-item-title
-                    v-for="sub in item.sub_menu"
-                    :key="sub.title"
+                <div>
+                  <v-list-item
+                    nav
+                    dense
+                    active-class="font-weight-light "
+                    v-for="item in items_footer"
+                    :key="item.title"
+                    link
                   >
-                    <a
-                      href=""
-                      class="font-weight-light text-decoration-none white--text"
-                      >{{ sub.text }}</a
+                    <v-list-item-icon>
+                      <v-icon color="white">{{ item.icon }}</v-icon>
+                    </v-list-item-icon>
+
+                    <v-list-item-content>
+                      <v-list-item-title class="white--text font-weight-light">
+                        {{ item.title }}
+                      </v-list-item-title>
+                    </v-list-item-content>
+                  </v-list-item>
+
+                  <v-container class="d-flex mt-2 justify-center">
+                    <div
+                      v-for="item in items_redes_sociais"
+                      :key="item.icon"
+                      class="pr-4 text-center"
                     >
-                  </v-list-item-title>
-                </v-list-item-content>
-              </v-list-item>
-            </v-col>
-          </v-row>
+                      <v-btn icon>
+                        <v-icon color="white"> {{ item.icon }} </v-icon>
+                      </v-btn>
+                    </div>
+                  </v-container>
+                </div>
+              </v-flex>
+            </v-layout>
+          </v-card-text>
         </v-container>
       </footer>
     </v-app>
@@ -544,6 +563,7 @@
 export default {
   data: () => ({
     drawer: null,
+    
     items_login: [
       { title: "Conta", icon: "mdi-account" },
       { title: "Assinatura", icon: "mdi-cart" },
@@ -554,7 +574,7 @@ export default {
       { title: "PREÇOS", icon: "mdi-currency-usd" },
       { title: "SOBRE", icon: "mdi-information-outline" },
       { title: "CONTATO", icon: "mdi-bullhorn" },
-    ],
+    ],    
     items_menu_all: [
       { title: "Home" },
       { title: "Produtos" },
@@ -598,32 +618,23 @@ export default {
         text: "contato@autom.com.br",
       },
     ],
-    footer_names: [
+    rows: [
       {
         title: "Índice",
-        sub_menu: [
-          { text: "Home" },
-          { text: "Produtos" },
-          { text: "Preço" },
-          { text: "Sobre" },
-          { text: "Contato" },
-        ],
+        children: ["Home", "Produtos", "Preço", "Sobre", "Contato"],
       },
       {
         title: "Privacidade",
-        sub_menu: [
-          { text: "Termos de uso" },
-          { text: "Política de privacidade" },
-        ],
+        children: ["Termos de Uso", "Política de privacidade"],
       },
       {
-        title: "Índice",
-        sub_menu: [
-          { text: "Filipe Padilha" },
-          { text: "Flora Santiago" },
-          { text: "Lucas Lima" },
-        ],
+        title: "Desenvolvedores",
+        children: ["Filipe Padilha", "Flora Barbosa", "Lucas Lima"],
       },
+    ],
+    items_footer: [
+      { title: "R. Mal. Floriano Peixoto, 185", icon: "mdi-google-maps" },
+      { title: "(51) 9 7070-7070", icon: "mdi-cellphone" },
     ],
   }),
 };
