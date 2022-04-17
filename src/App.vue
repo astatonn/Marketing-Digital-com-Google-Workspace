@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <v-app id="inspire">
-      
       <!-- Sandwich esquerda -->
       <v-navigation-drawer v-model="drawer" absolute temporary app>
         <template v-slot:prepend>
@@ -84,7 +83,7 @@
         </div>
       </v-app-bar>
       <v-main>
-
+        
         <!-- Imagem tela principal -->
         <v-container class="top_home mb-15" fluid>
           <div
@@ -116,7 +115,7 @@
         </v-container>
 
         <!-- Recursos -->
-        <v-container class="color recursos my-15" fluid>
+        <v-container class="color recursos my-10" fluid>
           <h1 class="text-center">Recursos</h1>
           <h2 class="font-weight-regular text-center mt-5">
             Descubra as vantagens das ferramentas disponíveis<br />dos sistemas
@@ -125,7 +124,7 @@
         </v-container>
 
         <!-- 3 Ícones -->
-        <v-container class="text-center">
+        <v-container class="text-center my-10">
           <v-row>
             <v-col
               v-for="({ src, text, title }, i) in articles"
@@ -156,14 +155,14 @@
         </v-container>
 
         <!-- Imagem mulher -->
-        <v-container class="my-15">
+        <v-container class="my-10">
           <div>
             <v-img src="src/img/screen.png"></v-img>
           </div>
         </v-container>
 
         <!-- Notebook -->
-        <v-container>
+        <v-container class="my-10">
           <v-row no-gutters>
             <v-col sm="6" md="5" lg="6" cols="12" class="d-flex justify-center">
               <v-card class="py-15 elevation-0" max-width="75%">
@@ -241,7 +240,7 @@
         </v-container>
 
         <!-- Ferramentas Utilizadas -->
-        <v-container class="color my-15">
+        <v-container class="color my-10">
           <h1 class="text-center">Ferramentas Utilizadas</h1>
           <h2 class="font-weight-regular text-center mt-5">
             Os sistemas AutoM utilizam as seguintes ferramentas<br />
@@ -257,7 +256,7 @@
             </v-col>
           </v-row>
 
-          <div class="botao_saiba_mais mt-16">
+          <div class="botao_saiba_mais mt-10">
             <v-btn rounded color="#AB2B2D" dark width="200" large>
               Saiba Mais
             </v-btn>
@@ -276,13 +275,13 @@
             "Meus lucros cresceram cerca de 36% no primeiro mês e 41% no ano<br />
             depois que comecei a utilizar a ferramenta AutoM"
           </h2>
-          <div class="d-flex justify-center py-8">
+          <div class="d-flex justify-center py-3">
             <v-img
               src="src/img/imagem_declaracao_feedback.png"
               max-width="200"
             ></v-img>
           </div>
-          <div class="botao_saiba_mais mt-16">
+          <div class="botao_saiba_mais mt-10">
             <v-btn rounded color="#AB2B2D" dark width="200" large>
               Saiba Mais
             </v-btn>
@@ -290,15 +289,16 @@
         </v-container>
 
         <!-- Preços -->
-        <v-container class="color_back_red">
-          <h1 class="text-center white--text">Preços</h1>
+        <v-container class="color_back_red my-10">
+          <h1 class="text-center white--text pt-2">Preços</h1>
+
           <h2 class="font-weight-regular text-center mt-5 white--text">
             Conheça os planos disponíveis
           </h2>
 
           <v-row class="pa-16 justify-center">
             <v-col md-col="4" sm-col="1" class="">
-              <v-card class="full-height rounded-lg" style="height: 350px">
+              <v-card class="full-height rounded-lg" style="height: 400px">
                 <v-card-text
                   class="
                     full-height
@@ -310,10 +310,10 @@
                   "
                   style="height: 290px; margin-top: 25px"
                 >
-                  <h3 class="" style="margin-top: 15px">BÁSICO</h3>
-                  <h5 class="">Conheça as campanhas habilitadas</h5>
+                  <h3 style="margin-top: 15px">BÁSICO</h3>
+                  <h5>Conheça as campanhas habilitadas</h5>
 
-                  <v-row class="">
+                  <v-row class="pt-15">
                     <v-col class="letters_main_big2">9</v-col>
                     <v-col> R$ Por mês </v-col>
                   </v-row>
@@ -324,7 +324,7 @@
                   <h5 class="font-weight-light">Cupom primeiro cadastro</h5>
                 </v-card-text>
 
-                <div class="botao_saiba_mais">
+                <div class="botao_saiba_mais py-8">
                   <v-btn rounded color="#AB2B2D" dark width="90%" large>
                     Eu quero!
                   </v-btn>
@@ -335,7 +335,7 @@
             <v-col md-col="4" sm-col="1">
               <v-card
                 class="full-height red darken-4 rounded-lg"
-                style="height: 400px"
+                style="height: 450px"
               >
                 <v-card-text
                   class="
@@ -351,7 +351,7 @@
                   <h3 class="" style="margin-top: 40px">INTERMEDIÁRIO</h3>
                   <h5 class="">O mais escolhido</h5>
 
-                  <v-row class="">
+                  <v-row class="pt-15">
                     <v-col class="justify-end letters_main_big2">19</v-col>
                     <v-col>
                       <v-row>R$</v-row>
@@ -367,7 +367,7 @@
                   <h5 class="font-weight-light">Modelos semi-personalizados</h5>
                 </v-card-text>
 
-                <div class="botao_saiba_mais">
+                <div class="botao_saiba_mais py-8">
                   <v-btn
                     rounded
                     color="white"
@@ -382,7 +382,7 @@
             </v-col>
 
             <v-col md-col="4" sm-col="1" class="">
-              <v-card class="full-height rounded-lg" style="height: 350px">
+              <v-card class="full-height rounded-lg" style="height: 400px">
                 <v-card-text
                   class="
                     full-height
@@ -397,7 +397,7 @@
                   <h3 class="" style="margin-top: 15px">PREMIUM</h3>
                   <h5 class="">Alavanque seu crescimento</h5>
 
-                  <v-row class="">
+                  <v-row class="pt-15">
                     <v-col class="justify-end letters_main_big2">49</v-col>
                     <v-col>
                       <v-row>R$</v-row>
@@ -420,7 +420,7 @@
                   <h5 class="font-weight-light">Análise de dados coletados</h5>
                 </v-card-text>
 
-                <div class="botao_saiba_mais">
+                <div class="botao_saiba_mais py-8">
                   <v-btn rounded color="#AB2B2D" dark width="90%" large>
                     Eu quero!
                   </v-btn>
@@ -431,101 +431,79 @@
         </v-container>
 
         <!-- Contate -->
-        <!-- <v-container class="color my-15">
-                        <h1 class="text-center">Contate-nos</h1>
-                        <h2 class="font-weight-regular text-center mt-5">
-                            Conheça mais sobre nossos serviços e campanhas
-                            disponíveis.
-                        </h2>
-                    </v-container> -->
-
-        <v-container class="my-15">
+        <v-container class="my-10">
           <h1 class="text-center">Contate-nos</h1>
-          <h2 class="font-weight-regular text-center mt-5">
+          <h2 class="color font-weight-regular text-center mt-5">
             Conheça mais sobre nossos serviços e campanhas disponíveis.
           </h2>
-					<v-row>
-							<v-col sm="6" md="6" lg="6" cols="12" class="pa-15 justify-center">
-								<v-card
-									elevation="2"
-									outlined
-								>
-									<v-list-item-title class="text-h4 py-5 text-center">
-										Contato
-									</v-list-item-title>
+          <v-row class="pt-5">
+            <v-col sm="6" md="6" lg="6" cols="12" class="pa-10 justify-center">
+              <v-card elevation="2" outlined>
+                <v-list-item-title class="text-h4 py-5 text-center">
+                  Contato
+                </v-list-item-title>
 
-									<v-sheet class="px-5">
-										<v-text-field label="Seu nome" filled rounded dense />
+                <v-sheet class="px-5">
+                  <v-text-field label="Seu nome" filled rounded dense />
 
-										<v-text-field label="Seu e-mail" filled rounded dense />
+                  <v-text-field label="Seu e-mail" filled rounded dense />
 
-										<v-textarea label="Sua mensagem" filled rounded dense />
+                  <v-textarea label="Sua mensagem" filled rounded dense />
 
-										<div class="botao_saiba_mais my-10">
-											<v-btn rounded color="#AB2B2D" dark width="200" large>
-												Enviar
-											</v-btn>
-										</div>
-									</v-sheet>
-								</v-card>
-							</v-col>
+                  <div class="botao_saiba_mais my-10">
+                    <v-btn rounded color="#AB2B2D" dark width="200" large>
+                      Enviar
+                    </v-btn>
+                  </div>
+                </v-sheet>
+              </v-card>
+            </v-col>
 
-						<v-col sm="6" md="6" lg="6" cols="12" class="pa-15 justify-center"  >
-						
-						<v-container class="text-center">
-							<v-row>
-								<v-col
-									v-for="({ src, text, title }, i) in articles"
-									:key="i"
-									cols="12"
-									md="4"
-								>
-									<div class="d-flex flex-column" style="align-items: center">
-										<v-img
-											:src="src"
-											class="mb-4"
-											height="40px"
-											width="40px"
-										></v-img>
+            <v-col sm="6" md="6" lg="6" cols="12" class="pa-15 justify-center">
+              <v-container class="text-center">
+                <v-row>
+                  <v-col
+                    v-for="({ src, text }, i) in icones_contatos"
+                    :key="i"
+                    cols="12"
+                    md="4"
+                  >
+                    <div class="d-flex flex-column" style="align-items: center">
+                      <v-img
+                        :src="src"
+                        class="mb-4"
+                        height="32"
+                        width="25"
+                      ></v-img>
 
-										<h3
-											class="font-weight-black text-uppercase"
-											v-text="title"
-										></h3>
+                      <div class="font-weight-light mb-5" v-text="text"></div>
+                    </div>
+                  </v-col>
+                </v-row>
+              </v-container>
 
-										<div
-											class="color title font-weight-regular mb-5"
-											v-text="text"
-										></div>
-									</div>
-								</v-col>
-							</v-row>
-						</v-container>
-	
-						<v-img src="src/img/map.png" />
+              <v-img src="src/img/map.png" />
 
-						<v-row>
-							<v-col class="d-flex mt-16 justify-center">
-								<div
-									v-for="item in items_redes_sociais"
-									:key="item.icon"
-									class="pr-4 text-center"
-								>
-									<v-btn icon>
-										<v-icon > {{ item.icon }} </v-icon>
-									</v-btn>
-							</div>
-						</v-col>
-					</v-row>
-
-						</v-col>
-					</v-row>
-				</v-container>
-      
-			</v-main>
+              <v-row>
+                <v-col class="d-flex mt-2 justify-center">
+                  <div
+                    v-for="item in items_redes_sociais"
+                    :key="item.icon"
+                    class="pr-4 text-center"
+                  >
+                    <v-btn icon>
+                      <v-icon color="#AB2B2D"> {{ item.icon }} </v-icon>
+                    </v-btn>
+                  </div>
+                </v-col>
+              </v-row>
+            </v-col>
+          </v-row>
+        </v-container>
+      </v-main>
 
       <!-- Footer -->
-      <footer>
+      <footer class="my-10">
         <v-container class="color_back_red my-15">
           <v-row>
             <v-col cols="12" md="4" class="d-flex flex-row">
@@ -601,9 +579,23 @@ export default {
         text: "Obtenha estatísticas do seu público e crie campanhas específicas para cada grupo",
       },
       {
-        src: "src/img/Vector2.png",
+        src: "src/img/Vector3.png",
         title: "Conteúdo personalizável",
         text: "Os serviços AutoM possibilitam criar modelos totalmente personalizáveis",
+      },
+    ],
+    icones_contatos: [
+      {
+        src: "src/img/maps.png",
+        text: "Rua Mal. Floriano Peixoto, 185, Porto Alegre, RS - Brasil",
+      },
+      {
+        src: "src/img/phone.png",
+        text: "(51) 9 7070-7070",
+      },
+      {
+        src: "src/img/email.png",
+        text: "contato@autom.com.br",
       },
     ],
     footer_names: [
@@ -627,9 +619,9 @@ export default {
       {
         title: "Índice",
         sub_menu: [
-          { text: "Lucas Lima" },
-          { text: "Flora Santiago" },
           { text: "Filipe Padilha" },
+          { text: "Flora Santiago" },
+          { text: "Lucas Lima" },
         ],
       },
     ],
