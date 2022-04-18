@@ -24,15 +24,15 @@
 	font-size: 15px;
 	font-family: Roboto;
 }
-.botao_saiba_mais {
-	text-align:center;
-}
 .color {
 	color: rgb(61, 61, 61);
 }
 .color_back_red {
 	background-color: #5E2122;
 	color: white;
+}
+.botao_saiba_mais {
+	text-align:center;
 }
 
 
