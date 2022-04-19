@@ -76,14 +76,14 @@
 				v-for="item in items_menu_all"
 				:key="item.title"
 			>
-				<v-btn text>
+				<v-btn :href="`#${item.id}`" text>
 					{{ item.title }}
 				</v-btn>
 			</div>
 		</v-app-bar>
 		<v-main>
 			<!-- Imagem tela principal -->
-			<v-container class="top_home my-15" fluid>
+			<v-container class="top_home my-15" fluid id="home">
 				<div
 					v-for="item in items_redes_sociais"
 					:key="item.icon"
@@ -113,7 +113,7 @@
 			</v-container>
 
 			<!-- Recursos -->
-			<v-container class="color recursos my-10" fluid>
+			<v-container class="color recursos my-10" fluid id="produtos">
 				<h1 class="text-center">Recursos</h1>
 				<h2 class="font-weight-regular text-center mt-5">
 					Descubra as vantagens das ferramentas disponíveis<br />dos
@@ -322,7 +322,7 @@
 			</v-container>
 
 			<!-- Preços -->
-			<v-container class="color_back_red my-10">
+			<v-container class="color_back_red my-10" id="precos">
 				<h1 class="text-center white--text pt-2">Preços</h1>
 
 				<h2 class="font-weight-regular text-center mt-5 white--text">
@@ -506,7 +506,7 @@
 			</v-container>
 
 			<!-- Contate -->
-			<v-container class="my-10">
+			<v-container class="my-10" id="contato">
 				<h1 class="text-center">Contate-nos</h1>
 				<h2 class="color font-weight-regular text-center mt-5">
 					Conheça mais sobre nossos serviços e campanhas disponíveis.
@@ -566,7 +566,7 @@
 						md="6"
 						lg="6"
 						cols="12"
-						class="pa-15 justify-center"
+						class="pa-10 justify-center"
 					>
 						<v-container class="text-center">
 							<v-row>
@@ -577,7 +577,7 @@
 									md="4"
 									class="d-flex flex-column text-center"
 								>
-									<v-icon>{{ item.icon }}</v-icon>
+									<v-icon color="#AB2B2D">{{ item.icon }}</v-icon>
 
 									<v-card-text>
 										{{ item.title }}
@@ -681,7 +681,6 @@
 export default {
 	data: () => ({
 		drawer: null,
-
 		items_login: [
 			{ title: "Conta", icon: "mdi-account" },
 			{ title: "Assinatura", icon: "mdi-cart" },
@@ -694,11 +693,11 @@ export default {
 			{ title: "CONTATO", icon: "mdi-bullhorn" },
 		],
 		items_menu_all: [
-			{ title: "Home" },
-			{ title: "Produtos" },
-			{ title: "Preços" },
-			{ title: "Sobre" },
-			{ title: "Contato" },
+			{ title: "Home", id: "home" },
+			{ title: "Produtos", id: "produtos" },
+			{ title: "Preços", id: "precos" },
+			{ title: "Sobre", id: "sobre" },
+			{ title: "Contato", id: "contato" },
 		],
 		items_redes_sociais: [
 			{ icon: "mdi-twitter" },
@@ -724,11 +723,10 @@ export default {
 		],
 		icones_contatos: [
 			{
-				title: "Rua Mal. Floriano Peixoto, 185, Porto Alegre, RS - Brasil",
-				icon: "mdi-google-maps",
+				title: "Rua Mal. Floriano Peixoto, 185, Porto Alegre, RS - Brasil", icon: "mdi-google-maps",
 			},
-			{ title: "(51) 9 7070-7070", icon: "mdi-google-maps" },
-			{ title: "contato@autom.com.br", icon: "mdi-google-maps" },
+			{ title: "(51) 9 7070-7070", icon: "mdi-phone" },
+			{ title: "contato@autom.com.br", icon: "mdi-email" },
 		],
 		rows: [
 			{

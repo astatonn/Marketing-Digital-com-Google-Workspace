@@ -34,6 +34,9 @@
 .botao_saiba_mais {
 	text-align:center;
 }
+html {
+	scroll-padding-top: 70px;
+}	
 
 
 /*Mobile*/
