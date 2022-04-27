@@ -8,7 +8,7 @@ Projeto da Cadeira de LABORATÓRIO DE SOFTWARE E PROJETOS 2022/1 -
 
   <b><h2>Requisitos Funcionais</h2></b>
   
-        <b><h3>3.2.1.1 Coleta de dados</h3></b>
+        <b>3.2.1.1 Coleta de dados</b>
         A coleta de dados será feita através de formulários no Google Forms onde serão coletados no mínimo os seguintes campos:
         <ul> 
           <li>Nome completo</li>
