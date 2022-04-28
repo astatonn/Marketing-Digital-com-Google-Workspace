@@ -1,9 +1,16 @@
+
+
 .top_home {
-	background-image: url("../img/rectangle9.png");
 	height: 100%;
 	max-height: 800px;
+	background-image: url("../img/rectangle9.png");
 	background-size: cover;
 	background-position: center bottom;
+}
+.logo_center {
+	width: 150px;
+	margin-bottom: 30px;
+	margin-top: 10px;
 }
 .letters_main_big{
 	font-size: 60px;
@@ -19,6 +26,10 @@
 .letters_main_medium{
 	font-size: 25px;
 	text-align: center;
+	color: white;
+}
+.v-card__title {
+	word-break: normal !important;
 }
 .letters_footer{
 	font-size: 15px;
@@ -27,10 +38,16 @@
 .color {
 	color: rgb(61, 61, 61);
 }
-.color_back_red {
+.color_back_red2 {
 	background-color: #5E2122;
 	color: white;
 }
+.v-expansion-panel-content.color_back_red2, .v-expansion-panel, .v-card.color_back_red2  {
+	background-color: #5E2122 !important;
+	color: white !important;
+	border-color: #5E2122 !important;
+}
+
 .botao_saiba_mais {
 	text-align:center;
 }
@@ -43,21 +60,73 @@ html {
 
 @media screen and (max-width: 798px) {
 	.top_home {
-		background-image: url("../img/rectangle9.png");
-		height: 100%;
 		max-height: 750px;
-		background-size: cover;
-		background-position: center bottom;
 	}
-	.letters_main_big{
-		font-size: 35px;
-		font-weight: bold;
-		text-align: center;
+	.letters_main_big {
+		font-size: 40px;
 		margin-top: 100px;
 	}
-	.letters_main_medium{
-		font-size: 20px;
-		text-align: center;
+	.letters_main_medium {
+		font-size: 25px;
 		margin-top: 50px;
+	}
+	.logo_center {
+		width: 100px;
+	}
+}
+
+
+
+
+
+@media screen and (min-width:960px) {
+	.v-expansion-panel:before {
+		box-shadow: none !important;
+	}
+	.v-expansion-panel:not(:first-child)::after {
+		border-top: none;
+	}
+}
+.resize {
+text-align: center;
+}
+.resize {
+margin-top: 3rem;
+font-size: 1.25rem;
+}
+
+@media (min-width: 960px) {
+	.col-md-3 {
+		flex: 0 0 25% !important;
+		max-width: 25% !important;
+	}
+}
+
+	/*RESIZESCREEN ANIMATION*/
+.right {
+	animation: rightanime 1s linear infinite;
+}
+
+.left {
+	animation: leftanime 1s linear infinite;
+}
+@keyframes rightanime {
+	50% {
+		transform: translateX(10px);
+		opacity: 0.5;
+}
+	100% {
+		transform: translateX(10px);
+		opacity: 0;
+	}
+}
+@keyframes leftanime {
+	50% {
+		transform: translateX(-10px);
+		opacity: 0.5;
+	}
+	100% {
+		transform: translateX(-10px);
+		opacity: 0;
 	}
 }
