@@ -339,11 +339,11 @@
                     Conheça os planos disponíveis
                 </h2>
 
-                <v-row class="pa-16 justify-center">
+                <v-row class="pa-8 justify-center">
                     <v-col md-col="4" sm-col="1">
                         <v-card
                             class="full-height rounded-lg"
-                            style="height: 400px"
+                            style="height: 380px"
                         >
                             <v-card-text
                                 class="
@@ -354,7 +354,7 @@
                                     align-center
                                     black--text
                                 "
-                                style="height: 290px; margin-top: 25px"
+                                style="height: 269px"
                             >
                                 <h3 style="margin-top: 15px">BÁSICO</h3>
                                 <h5>Conheça as campanhas habilitadas</h5>
@@ -377,7 +377,7 @@
                                 </h5>
                             </v-card-text>
 
-                            <div class="botao_saiba_mais py-10">
+                            <div class="botao_saiba_mais py-8">
                                 <v-btn
                                     rounded
                                     color="#AB2B2D"
@@ -405,12 +405,12 @@
                                     align-center
                                     white--text
                                 "
-                                style="height: 315px"
+                                style="height: 313px"
                             >
-                                <h3 class="" style="margin-top: 40px">
+                                <h3 style="margin-top: 15px">
                                     INTERMEDIÁRIO
                                 </h3>
-                                <h5 class="">O mais escolhido</h5>
+                                <h5>O mais escolhido</h5>
 
                                 <v-row class="pt-15">
                                     <v-col
@@ -423,6 +423,7 @@
                                     </v-col>
                                 </v-row>
 
+                                <v-spacer />
                                 <v-spacer />
 
                                 <h5 class="font-weight-light">
@@ -439,7 +440,7 @@
                                 </h5>
                             </v-card-text>
 
-                            <div class="botao_saiba_mais py-10">
+                            <div class="botao_saiba_mais py-8">
                                 <v-btn
                                     rounded
                                     color="white"
@@ -453,10 +454,10 @@
                         </v-card>
                     </v-col>
 
-                    <v-col md-col="4" sm-col="1" class="">
+                    <v-col md-col="4" sm-col="1">
                         <v-card
                             class="full-height rounded-lg"
-                            style="height: 400px"
+                            style="height: 465px"
                         >
                             <v-card-text
                                 class="
@@ -467,12 +468,12 @@
                                     align-center
                                     black--text
                                 "
-                                style="height: 290px; margin-top: 25px"
+                                style="height: 336px"
                             >
-                                <h3 class="" style="margin-top: 15px">
+                                <h3 style="margin-top: 15px">
                                     PREMIUM
                                 </h3>
-                                <h5 class="">Alavanque seu crescimento</h5>
+                                <h5>Alavanque seu crescimento</h5>
 
                                 <v-row class="pt-15">
                                     <v-col
@@ -504,7 +505,7 @@
                                 </h5>
                             </v-card-text>
 
-                            <div class="botao_saiba_mais py-10">
+                            <div class="botao_saiba_mais py-14">
                                 <v-btn
                                     rounded
                                     color="#AB2B2D"
@@ -735,7 +736,7 @@
 			],
             icones_contatos: [
 				{
-					title: "Rua Mal. Floriano Peixoto, 185, Porto Alegre, Rio Grande do Sul, Brasil",
+					title: "Rua Mal. Floriano Peixoto, 185, Porto Alegre",
 					icon: "mdi-google-maps",
 				},
 				{
@@ -762,7 +763,7 @@
 				},
 			],
 			items_footer: [
-				{ title: "R. Mal. Floriano Peixoto, 185", icon: "mdi-google-maps" },
+				{ title: "R. Mal. Floriano Peixoto, 185, Porto Alegre", icon: "mdi-google-maps" },
 				{ title: "(51) 9 7070-7070", icon: "mdi-cellphone" },
 			],
 			items: [
