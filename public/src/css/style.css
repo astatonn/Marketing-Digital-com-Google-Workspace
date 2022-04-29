@@ -54,7 +54,7 @@ html {
 }	
 
 
-/Mobile/
+/*Mobile*/
 
 @media screen and (max-width: 798px) {
 	.top_home {
@@ -107,7 +107,7 @@ margin-top: 3rem;
 font-size: 1.25rem;
 }
 
-	/RESIZESCREEN ANIMATION/
+	/*RESIZESCREEN ANIMATION*/
 .right {
 	animation: rightanime 1s linear infinite;
 }
