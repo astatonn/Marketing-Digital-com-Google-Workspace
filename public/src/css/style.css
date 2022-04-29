@@ -54,7 +54,7 @@ html {
 }	
 
 
-/*Mobile*/
+/Mobile/
 
 @media screen and (max-width: 798px) {
 	.top_home {
@@ -82,6 +82,15 @@ html {
 	}
 }
 
+@media screen and (min-width:768px) {
+	.v-expansion-panel:before {
+		flex;
+	}
+
+}
+
+
+
 @media (min-width: 960px) {
 	.col-md-3 {
 		flex: 0 0 25% !important;
@@ -98,7 +107,7 @@ margin-top: 3rem;
 font-size: 1.25rem;
 }
 
-	/*RESIZESCREEN ANIMATION*/
+	/RESIZESCREEN ANIMATION/
 .right {
 	animation: rightanime 1s linear infinite;
 }

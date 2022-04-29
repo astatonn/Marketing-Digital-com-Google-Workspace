@@ -95,25 +95,24 @@
                     </v-btn>
                 </div>
 
-				<div class="d-flex">
-					<v-spacer></v-spacer>
-                    <img class="logo_center" src="src/img/logo_center.png" >
-					<v-spacer></v-spacer>
-
+                <div class="d-flex">
+                    <v-spacer></v-spacer>
+                    <img class="logo_center" src="src/img/logo_center.png" />
+                    <v-spacer></v-spacer>
                 </div>
-				
-				<div>
-					<p class="letters_main_big white--text mt-1">
-						Alcance novos horizontes <br />
-						com o seu negócio
-					</p>
 
-					<p class="letters_main_medium white--text">
-						Uma nova forma de realizar suas campanhas de Marketing
-						<br />
-						Digital para captação de clientes.
-					</p>
-				</div>
+                <div>
+                    <p class="letters_main_big white--text mt-1">
+                        Alcance novos horizontes <br />
+                        com o seu negócio
+                    </p>
+
+                    <p class="letters_main_medium white--text">
+                        Uma nova forma de realizar suas campanhas de Marketing
+                        <br />
+                        Digital para captação de clientes.
+                    </p>
+                </div>
 
                 <div class="botao_saiba_mais mt-16">
                     <v-btn rounded color="#AB2B2D" dark width="200" large>
@@ -184,15 +183,15 @@
                     >
                         <v-card class="py-15 elevation-0" max-width="75%">
                             <v-card-title
-                            class="
-                                text-h4
-                                title
-                                font-weight-normal
-                                dont_break
-                            "
-                            >A melhor maneira para expandir seu
-                            negócio</v-card-title
-                        >
+                                class="
+                                    text-h4
+                                    title
+                                    font-weight-normal
+                                    dont_break
+                                "
+                                >A melhor maneira para expandir seu
+                                negócio</v-card-title
+                            >
                             <v-card-text
                                 class="
                                     text-h6
@@ -340,7 +339,7 @@
                 </h2>
 
                 <v-row class="pa-8 justify-center">
-                    <v-col md-col="4" sm-col="1">
+                    <v-col md="4" cols="12">
                         <v-card
                             class="full-height rounded-lg"
                             style="height: 380px"
@@ -391,7 +390,7 @@
                         </v-card>
                     </v-col>
 
-                    <v-col md-col="4" sm-col="1">
+                    <v-col md="4" cols="12">
                         <v-card
                             class="full-height red darken-4 rounded-lg"
                             style="height: 450px"
@@ -407,9 +406,7 @@
                                 "
                                 style="height: 313px"
                             >
-                                <h3 style="margin-top: 15px">
-                                    INTERMEDIÁRIO
-                                </h3>
+                                <h3 style="margin-top: 15px">INTERMEDIÁRIO</h3>
                                 <h5>O mais escolhido</h5>
 
                                 <v-row class="pt-15">
@@ -454,7 +451,7 @@
                         </v-card>
                     </v-col>
 
-                    <v-col md-col="4" sm-col="1">
+                    <v-col md="4" cols="12">
                         <v-card
                             class="full-height rounded-lg"
                             style="height: 465px"
@@ -470,9 +467,7 @@
                                 "
                                 style="height: 336px"
                             >
-                                <h3 style="margin-top: 15px">
-                                    PREMIUM
-                                </h3>
+                                <h3 style="margin-top: 15px">PREMIUM</h3>
                                 <h5>Alavanque seu crescimento</h5>
 
                                 <v-row class="pt-15">
@@ -594,11 +589,13 @@
                                 md="6"
                                 class="my-5"
                             >
-                                <v-icon left color="#AB2B2D">
-									{{ item.icon }}
-								</v-icon>
+                                <v-col>
+                                    <v-icon left color="#AB2B2D">
+                                        {{ item.icon }}
+                                    </v-icon>
 
-                                {{ item.title }}
+                                    {{ item.title }}
+                                </v-col>
                             </v-row>
                         </v-container>
 
@@ -625,65 +622,71 @@
         <!-- Footer -->
         <v-footer padless class="mt-5">
             <v-card flat tile width="100%" class="color_back_red2 text-center">
-				<!-- Principal Footer -->
-				<v-expansion-panels accordion v-model="panel" multiple dark>
-					<v-expansion-panel
-						v-for="(item, i) in items"
-						:key="i"
-						class="color_back_red2 col-md-3 col-12 elevation-0 pt-10"
-					>
-						<h3 class="d-none d-md-block py-2">
-							{{ item.name }}
-						</h3>
-						<v-expansion-panel-header class="d-md-none">
-							{{ item.name }}
-						</v-expansion-panel-header>
-						<v-expansion-panel-content class="color_back_red2">
-							<li v-for="(tag, i) in item.tags" :key="i">
-								<a
-									target="_blank"
-									v-bind:href="tag.url"
-									class="white--text text-decoration-none"
-									>{{ tag.urlname }}
-								</a>
-							</li>
-						</v-expansion-panel-content>
-					</v-expansion-panel>
-				</v-expansion-panels>
-				
-				<!-- Redes sociais Footer -->
-				<v-container class="d-flex justify-center">
-					<div
-						v-for="item in items_redes_sociais"
-						:key="item.icon"
-						class="pr-4 text-center"
-					>
-						<v-btn icon>
-							<v-icon color="white">
-								{{ item.icon }}
-							</v-icon>
-						</v-btn>
-					</div>
-				</v-container>
+                <!-- Principal Footer -->
+                <v-expansion-panels accordion v-model="panel" multiple dark>
+                    <v-expansion-panel
+                        v-for="(item, i) in items"
+                        :key="i"
+                        class="
+                            color_back_red2
+                            col-md-3 col-12
+                            elevation-0
+                            pt-10
+                        "
+                    >
+                        <h3 class="d-none d-md-block py-2">
+                            {{ item.name }}
+                        </h3>
+                        <v-expansion-panel-header class="d-md-none">
+                            {{ item.name }}
+                        </v-expansion-panel-header>
+                        <v-expansion-panel-content class="color_back_red2">
+                            <li v-for="(tag, i) in item.tags" :key="i">
+                                <a
+                                    target="_blank"
+                                    v-bind:href="tag.url"
+                                    class="white--text text-decoration-none"
+                                    >{{ tag.urlname }}
+                                </a>
+                            </li>
+                        </v-expansion-panel-content>
+                    </v-expansion-panel>
+                </v-expansion-panels>
 
-				<!-- Ícones Maps e Celular Footer -->
-				<v-container>
-					<v-row
-						active-class="font-weight-light"
-						v-for="item in items_footer"
-						:key="item.title"
-						cols="12"
-						md="12"
-						class="my-2 justify-center"
-						
-					>
-						<v-icon color="white" left>
-							{{ item.icon }}
-						</v-icon>
+                <!-- Redes sociais Footer -->
+                <v-container class="d-flex justify-center">
+                    <div
+                        v-for="item in items_redes_sociais"
+                        :key="item.icon"
+                        class="pr-4 text-center"
+                    >
+                        <v-btn icon>
+                            <v-icon color="white">
+                                {{ item.icon }}
+                            </v-icon>
+                        </v-btn>
+                    </div>
+                </v-container>
 
-						{{ item.title }}
-					</v-row>
-				</v-container>
+                <!-- Ícones Maps e Celular Footer -->
+                <v-container>
+                    <v-row
+                        active-class="font-weight-light"
+                        v-for="item in items_footer"
+                        :key="item.title"
+                        cols="12"
+                        md="12"
+                        class="my-2 justify-center"
+                    >
+                        <v-col>
+                            <v-icon color="white" left>
+                                {{ item.icon }}
+                            </v-icon>
+
+                            {{ item.title }}
+                        </v-col>
+                    </v-row>
+                </v-container>
             </v-card>
         </v-footer>
     </v-app>
@@ -691,142 +694,154 @@
 
 
 <script>
-	export default {
-		data: () => ({
-			panel: [],
-			drawer: null,
-			items_login: [
-				{ title: "Conta", icon: "mdi-account" },
-				{ title: "Assinatura", icon: "mdi-cart" },
-				{ title: "Logout", icon: "mdi-logout" },
-			],
-			items_menu_xs: [
-				{ title: "PRODUTOS", icon: "mdi-package-variant-closed" },
-				{ title: "PREÇOS", icon: "mdi-currency-usd" },
-				{ title: "SOBRE", icon: "mdi-information-outline" },
-				{ title: "CONTATO", icon: "mdi-bullhorn" },
-			],
-			items_menu_all: [
-				{ title: "Home", id: "home" },
-				{ title: "Produtos", id: "produtos" },
-				{ title: "Preços", id: "precos" },
-				{ title: "Contato", id: "contato" },
-			],
-			items_redes_sociais: [
-				{ icon: "mdi-twitter" },
-				{ icon: "mdi-facebook" },
-				{ icon: "mdi-linkedin" },
-			],
-			articles: [
-				{
-					src: "src/img/Vector1.png",
-					title: "Campanhas automáticas",
-					text: "Com o sistema de agendamento é possível programar campanhas automáticas para envio de conteúdo para seus clientes.",
-				},
-				{
-					src: "src/img/Vector2.png",
-					title: "Controle de dados",
-					text: "Obtenha estatísticas do seu público e crie campanhas específicas para cada grupo",
-				},
-				{
-					src: "src/img/Vector3.png",
-					title: "Conteúdo personalizável",
-					text: "Os serviços AutoM possibilitam criar modelos totalmente personalizáveis",
-				},
-			],
-            icones_contatos: [
-				{
-					title: "Rua Mal. Floriano Peixoto, 185, Porto Alegre",
-					icon: "mdi-google-maps",
-				},
-				{
-					title: "(51) 9 7070-7070",
-					icon: "mdi-phone",
-				},
-				{
-					title: "contato@autom.com.br",
-					icon: "mdi-email",
-				},
-			],
-			rows: [
-				{
-					title: "Índice",
-					children: ["Home", "Produtos", "Preço", "Contato"],
-				},
-				{
-					title: "Privacidade",
-					children: ["Termos de Uso", "Política de privacidade"],
-				},
-				{
-					title: "Desenvolvedores",
-					children: ["Filipe Padilha", "Flora Barbosa", "Lucas Lima"],
-				},
-			],
-			items_footer: [
-				{ title: "R. Mal. Floriano Peixoto, 185, Porto Alegre", icon: "mdi-google-maps" },
-				{ title: "(51) 9 7070-7070", icon: "mdi-cellphone" },
-			],
-			items: [
-				{
-					name: "Índice",
-					tags: [
-						{
-							urlname: "Home",
-							url: "",
-						},
-						{
-							urlname: "Produtos",
-							url: "",
-						},
-						{
-							urlname: "Preço",
-							url: "",
-						},
-						{
-							urlname: "Contato",
-							url: "",
-						},
-					],
-				},
-				{
-					name: "Privacidade",
-					tags: [
-						{ urlname: "Termos de Uso", url: "" },
-						{ urlname: "Política de privacidade", url: "" },
-					],
-				},
-				{
-					name: "Desenvolvedores",
-					tags: [
-						{ urlname: "Filipe Padilha", url: "https://br.linkedin.com/in/fdapadilha" },
-						{ urlname: "Flora Barbosa", url: "https://br.linkedin.com/in/flora-barbosa-santiago-a13b5512a" },
-						{ urlname: "Lucas Lima", url: "https://br.linkedin.com/in/lucas-lima-477377a5" },
-					],
-				},
-			],
-		}),
+export default {
+    data: () => ({
+        panel: [],
+        drawer: null,
+        items_login: [
+            { title: "Conta", icon: "mdi-account" },
+            { title: "Assinatura", icon: "mdi-cart" },
+            { title: "Logout", icon: "mdi-logout" },
+        ],
+        items_menu_xs: [
+            { title: "PRODUTOS", icon: "mdi-package-variant-closed" },
+            { title: "PREÇOS", icon: "mdi-currency-usd" },
+            { title: "SOBRE", icon: "mdi-information-outline" },
+            { title: "CONTATO", icon: "mdi-bullhorn" },
+        ],
+        items_menu_all: [
+            { title: "Home", id: "home" },
+            { title: "Produtos", id: "produtos" },
+            { title: "Preços", id: "precos" },
+            { title: "Contato", id: "contato" },
+        ],
+        items_redes_sociais: [
+            { icon: "mdi-twitter" },
+            { icon: "mdi-facebook" },
+            { icon: "mdi-linkedin" },
+        ],
+        articles: [
+            {
+                src: "src/img/Vector1.png",
+                title: "Campanhas automáticas",
+                text: "Com o sistema de agendamento é possível programar campanhas automáticas para envio de conteúdo para seus clientes.",
+            },
+            {
+                src: "src/img/Vector2.png",
+                title: "Controle de dados",
+                text: "Obtenha estatísticas do seu público e crie campanhas específicas para cada grupo",
+            },
+            {
+                src: "src/img/Vector3.png",
+                title: "Conteúdo personalizável",
+                text: "Os serviços AutoM possibilitam criar modelos totalmente personalizáveis",
+            },
+        ],
+        icones_contatos: [
+            {
+                title: "R. Mal. Floriano Peixoto, 185 - Centro Histórico, Porto Alegre - RS, 90020-171",
+                icon: "mdi-google-maps",
+            },
+            {
+                title: "(51) 9 7070-7070",
+                icon: "mdi-phone",
+            },
+            {
+                title: "contato@autom.com.br",
+                icon: "mdi-email",
+            },
+        ],
+        rows: [
+            {
+                title: "Índice",
+                children: ["Home", "Produtos", "Preço", "Contato"],
+            },
+            {
+                title: "Privacidade",
+                children: ["Termos de Uso", "Política de privacidade"],
+            },
+            {
+                title: "Desenvolvedores",
+                children: ["Filipe Padilha", "Flora Barbosa", "Lucas Lima"],
+            },
+        ],
+        items_footer: [
+            {
+                title: "R. Mal. Floriano Peixoto, 185 - Centro Histórico, Porto Alegre - RS, 90020-171",
+                icon: "mdi-google-maps",
+            },
+            { title: "(51) 9 7070-7070", icon: "mdi-cellphone" },
+        ],
+        items: [
+            {
+                name: "Índice",
+                tags: [
+                    {
+                        urlname: "Home",
+                        url: "",
+                    },
+                    {
+                        urlname: "Produtos",
+                        url: "",
+                    },
+                    {
+                        urlname: "Preço",
+                        url: "",
+                    },
+                    {
+                        urlname: "Contato",
+                        url: "",
+                    },
+                ],
+            },
+            {
+                name: "Privacidade",
+                tags: [
+                    { urlname: "Termos de Uso", url: "" },
+                    { urlname: "Política de privacidade", url: "" },
+                ],
+            },
+            {
+                name: "Desenvolvedores",
+                tags: [
+                    {
+                        urlname: "Filipe Padilha",
+                        url: "https://br.linkedin.com/in/fdapadilha",
+                    },
+                    {
+                        urlname: "Flora Barbosa",
+                        url: "https://br.linkedin.com/in/flora-barbosa-santiago-a13b5512a",
+                    },
+                    {
+                        urlname: "Lucas Lima",
+                        url: "https://br.linkedin.com/in/lucas-lima-477377a5",
+                    },
+                ],
+            },
+        ],
+    }),
 
-		beforeDestroy() {
-			if (typeof window !== "undefined") {
-				window.removeEventListener("resize", this.onResize, {
-					passive: true,
-				});
-			}
-		},
+    beforeDestroy() {
+        if (typeof window !== "undefined") {
+            window.removeEventListener("resize", this.onResize, {
+                passive: true,
+            });
+        }
+    },
 
-		mounted() {
-			this.onResize();
-			window.addEventListener("resize", this.onResize, { passive: true });
-		},
+    mounted() {
+        this.onResize();
+        window.addEventListener("resize", this.onResize, { passive: true });
+    },
 
-		methods: {
-			onResize() {
-				if (window.innerWidth >= 960) {
-					this.panel = [...Array(3).keys()].map((k, i) => i);
-				} else {
-					this.panel = [];
-				}
-			},
-		},
-	};
+    methods: {
+        onResize() {
+            if (window.innerWidth >= 960) {
+                this.panel = [...Array(3).keys()].map((k, i) => i);
+            } else {
+                this.panel = [];
+            }
+        },
+    },
+};
 </script>
