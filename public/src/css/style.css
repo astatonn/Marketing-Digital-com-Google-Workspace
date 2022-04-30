@@ -73,6 +73,15 @@ html {
 	}
 }
 
+@media screen and (max-width: 362px) {
+	.letters_main_big {
+		font-size: 35px;
+	}
+	.letters_main_medium {
+		font-size: 20px;
+	}
+}
+
 @media screen and (min-width:960px) {
 	.v-expansion-panel:before {
 		box-shadow: none !important;

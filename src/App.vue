@@ -49,6 +49,7 @@
                     v-for="item in items_menu_xs"
                     :key="item.title"
                     link
+                    :href="`#${item.id}`"
                 >
                     <v-list-item-icon>
                         <v-icon>{{ item.icon }}</v-icon>
@@ -704,10 +705,10 @@ export default {
             { title: "Logout", icon: "mdi-logout" },
         ],
         items_menu_xs: [
-            { title: "PRODUTOS", icon: "mdi-package-variant-closed" },
-            { title: "PREÇOS", icon: "mdi-currency-usd" },
-            { title: "SOBRE", icon: "mdi-information-outline" },
-            { title: "CONTATO", icon: "mdi-bullhorn" },
+            { title: "HOME", icon: "mdi-home", id: "home" },
+            { title: "PRODUTOS", icon: "mdi-package-variant-closed", id: "produtos" },
+            { title: "PREÇOS", icon: "mdi-currency-usd", id: "precos" },
+            { title: "CONTATO", icon: "mdi-bullhorn", id: "contato" },
         ],
         items_menu_all: [
             { title: "Home", id: "home" },
