@@ -644,7 +644,7 @@
                         <v-expansion-panel-content class="color_back_red2">
                             <li v-for="(tag, i) in item.tags" :key="i">
                                 <a
-                                    target="_blank"
+                                    :target="changeAncoraUrl(item.name)"
                                     v-bind:href="tag.url"
                                     class="white--text text-decoration-none"
                                     >{{ tag.urlname }}
@@ -779,19 +779,19 @@ export default {
                 tags: [
                     {
                         urlname: "Home",
-                        url: "",
+                        url: "#home",
                     },
                     {
                         urlname: "Produtos",
-                        url: "",
+                        url: "#produtos",
                     },
                     {
                         urlname: "Preço",
-                        url: "",
+                        url: "#precos",
                     },
                     {
                         urlname: "Contato",
-                        url: "",
+                        url: "#contato",
                     },
                 ],
             },
@@ -843,6 +843,13 @@ export default {
                 this.panel = [];
             }
         },
+
+		changeAncoraUrl (name) {
+			if (name !== "Índice"){
+				return "_blank";	
+			} 
+			return "";
+		}
     },
 };
 </script>
