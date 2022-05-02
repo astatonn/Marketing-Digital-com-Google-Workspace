@@ -730,12 +730,12 @@ export default {
             {
                 src: "src/img/Vector2.png",
                 title: "Controle de dados",
-                text: "Obtenha estatísticas do seu público e crie campanhas específicas para cada grupo",
+                text: "Obtenha estatísticas do seu público e crie campanhas específicas para cada grupo.",
             },
             {
                 src: "src/img/Vector3.png",
                 title: "Conteúdo personalizável",
-                text: "Os serviços AutoM possibilitam criar modelos totalmente personalizáveis",
+                text: "Os serviços AutoM possibilitam criar modelos totalmente personalizáveis.",
             },
         ],
         icones_contatos: [
