@@ -202,7 +202,7 @@
                                     text-wrap
                                 "
                                 >A ferramenta AutoM garante a captação de novos
-                                clientes com preços acessíveis</v-card-text
+                                clientes com preços acessíveis.</v-card-text
                             >
                             <v-card-actions class="justify-center">
                                 <v-btn
