@@ -1,6 +1,6 @@
 # Marketing-Digital-com-Google-Workspace
 Projeto da Cadeira de LABORATÓRIO DE SOFTWARE E PROJETOS 2022/1 - 
-<a href="https://docs.google.com/document/d/1eOOMOofuuXGu5uqMa4ReT73d2BZBQ-_K0DUSBNY-k_A/edit?usp=sharing">Artigo</a>
+<a href="https://docs.google.com/document/d/1eOOMOofuuXGu5uqMa4ReT73d2BZBQ-_K0DUSBNY-k_A/edit?usp=sharing">Documentação do Projeto</a>
 # AutoM
 
 
@@ -51,7 +51,16 @@ Projeto da Cadeira de LABORATÓRIO DE SOFTWARE E PROJETOS 2022/1 -
   <p>RFN03 Hospedagem</p>
   <p>O Site deverá ser hospedado através da plataforma Heroku.</p><br>
   
-        
+## 🛠️ Desenvolvimento do Site
+
+    <a href="https://www.w3schools.com/html/default.asp">HTML5</a> - Estrtura Lógica FrontEnd do Site
+    <a href="https://www.w3schools.com/js/default.asp">Java Script</a> - Configurações do Servidor Heroku e para utilização do Vue
+    <a href="https://www.w3schools.com/css/default.asp">CSS</a> - Estrutura Lógica de Desgin do Site
+    <a href="https://vuejs.org/">Vue</a> - O framework de JavaScript para FrontEnd do Site         
+    <a href="https://vuetifyjs.com/en/">Vuetify</a> - Framework de Design do Site
+    
+    
+
 ## ✒️ Autores
 
 * **** - *Fiipe Padilha* - (https://br.linkedin.com/in/fdapadilha)
