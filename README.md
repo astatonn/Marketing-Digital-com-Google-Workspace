@@ -19,6 +19,9 @@ Projeto da Cadeira de LABORATÓRIO DE SOFTWARE E PROJETOS 2022/1 -
         <p>Todos os dados deverão passar por validações REGEX disponibilizados pela ferramenta.</p>
         <p>Todos os formulários terão um extrato dos termos de uso e política de privacidade de dados de acordo com a Lei nº 13.709 (Lei Geral de Proteção de Dados).</p>
         <p>Para as soluções do plano Premium, os campos e formulários serão estipulados de acordo com a demanda do cliente.</p>
+        
+        
+        
 
 ## ✒️ Autores
 
@@ -26,5 +29,5 @@ Lucas Lima, Flora Santiago, Filipe Padilha
 
 * **** - *Fiipe Padilha* - (https://br.linkedin.com/in/fdapadilha)
 * **** - *Flora Barbosa* - (https://br.linkedin.com/in/flora-barbosa-santiago-a13b5512a)
-* **** - *Lucas Lima * - (https://br.linkedin.com/in/lucas-lima-477377a)
+* **** - *Lucas Lima* - (https://br.linkedin.com/in/lucas-lima-477377a)
 
