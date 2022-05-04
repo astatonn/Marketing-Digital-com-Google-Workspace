@@ -2,7 +2,7 @@
 Projeto da Cadeira de LABORATÓRIO DE SOFTWARE E PROJETOS 2022/1 - 
 <a href="https://docs.google.com/document/d/1eOOMOofuuXGu5uqMa4ReT73d2BZBQ-_K0DUSBNY-k_A/edit?usp=sharing">Documentação do Projeto</a>
 # AutoM
-
+<a href="https://automf.herokuapp.com/">AutoM</a>
 
 
 ## 📋 Requisitos do Sistema 
@@ -70,7 +70,7 @@ Projeto da Cadeira de LABORATÓRIO DE SOFTWARE E PROJETOS 2022/1 -
 
 ## ✒️ Autores
 
-* **** - *Fiipe Padilha* - (https://br.linkedin.com/in/fdapadilha)
-* **** - *Flora Barbosa* - (https://br.linkedin.com/in/flora-barbosa-santiago-a13b5512a)
-* **** - *Lucas Lima* - (https://br.linkedin.com/in/lucas-lima-477377a)
+* - *Fiipe Padilha* - <a href="https://br.linkedin.com/in/fdapadilha">fdapadilha</a>
+* - *Flora Barbosa* - <a href="https://br.linkedin.com/in/flora-barbosa-santiago-a13b5512a">flora barbosa santiago</a>
+* - *Lucas Lima* - <a href="https://br.linkedin.com/in/lucas-lima-477377a">lucas lima</a>
 
