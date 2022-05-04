@@ -49,17 +49,23 @@ Projeto da Cadeira de LABORATÓRIO DE SOFTWARE E PROJETOS 2022/1 -
   <p>RFN02 Responsividade</p>
   <p>Capacidade de adaptação do site a partir dos diferentes tipos de dispositivos. O site deverá ter versões compatíveis para as seguintes larguras: 425 px, 768 px e superior a 768 px.</p><br>
   <p>RFN03 Hospedagem</p>
-  <p>O Site deverá ser hospedado através da plataforma Heroku.</p><br>
+  <p>O Site deverá ser hospedado através da plataforma Heroku.</p><br><br><br>
   
+## 🔧 Instalação
+
+<a href="https://dashboard.heroku.com/login">Deploy no Heroku</a> - Plataforma utilizada para endereçamento do Site<br>
+<a href="https://medium.com/tableless/fazendo-deploy-de-apps-vue-webpack-no-heroku-89340028a88e">Criação de Dependências para o Heroku</a> - Site referência para criação de dependências necessárias na integraçãoentre github e Heroku<br><br>
+<a href="https://devcenter.heroku.com/articles/heroku-cli">Heroku Cli</a> - Software necessário para acessar o terminal para envio do projeto para o Heroku <br><br><br>
+
+
 ## 🛠️ Desenvolvimento do Site
 
-    <a href="https://www.w3schools.com/html/default.asp">HTML5</a> - Estrtura Lógica FrontEnd do Site
-    <a href="https://www.w3schools.com/js/default.asp">Java Script</a> - Configurações do Servidor Heroku e para utilização do Vue
-    <a href="https://www.w3schools.com/css/default.asp">CSS</a> - Estrutura Lógica de Desgin do Site
-    <a href="https://vuejs.org/">Vue</a> - O framework de JavaScript para FrontEnd do Site         
-    <a href="https://vuetifyjs.com/en/">Vuetify</a> - Framework de Design do Site
-    
-    
+<a href="https://www.w3schools.com/html/default.asp">HTML5</a> - Estrtura Lógica FrontEnd do Site<br>
+<a href="https://www.w3schools.com/js/default.asp">Java Script</a> - Configurações do Servidor Heroku e para utilização do Vue<br>
+<a href="https://www.w3schools.com/css/default.asp">CSS</a> - Estrutura Lógica de Desgin do Site<br>
+<a href="https://vuejs.org/">Vue</a> - O framework de JavaScript para FrontEnd do Site<br>
+<a href="https://vuetifyjs.com/en/">Vuetify</a> - Framework de Design do Site<br><br><br>
+
 
 ## ✒️ Autores
 
