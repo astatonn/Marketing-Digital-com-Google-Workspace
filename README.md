@@ -49,7 +49,7 @@ Projeto da Cadeira de LABORATÓRIO DE SOFTWARE E PROJETOS 2022/1 -
   <p>RFN02 Responsividade</p>
   <p>Capacidade de adaptação do site a partir dos diferentes tipos de dispositivos. O site deverá ter versões compatíveis para as seguintes larguras: 425 px, 768 px e superior a 768 px.</p><br>
   <p>RFN03 Hospedagem</p>
-  <p>O Site deverá ser hospedado através da plataforma Heroku.</p><br><br>
+  <p>O Site deverá ser hospedado através da plataforma Heroku.</p><br>
   
   
 ## 🔧 Instalação
@@ -70,7 +70,7 @@ Projeto da Cadeira de LABORATÓRIO DE SOFTWARE E PROJETOS 2022/1 -
 
 ## ✒️ Autores
 
-* - *Fiipe Padilha* - <a href="https://br.linkedin.com/in/fdapadilha">fdapadilha</a>
-* - *Flora Barbosa* - <a href="https://br.linkedin.com/in/flora-barbosa-santiago-a13b5512a">flora barbosa santiago</a>
-* - *Lucas Lima* - <a href="https://br.linkedin.com/in/lucas-lima-477377a">lucas lima</a>
+* *Fiipe Padilha* <a href="https://br.linkedin.com/in/fdapadilha">fdapadilha</a>
+* *Flora Barbosa* <a href="https://br.linkedin.com/in/flora-barbosa-santiago-a13b5512a">flora barbosa santiago</a>
+* *Lucas Lima* <a href="https://br.linkedin.com/in/lucas-lima-477377a">lucas lima</a>
 
