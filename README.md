@@ -70,7 +70,7 @@ Projeto da Cadeira de LABORATÓRIO DE SOFTWARE E PROJETOS 2022/1 -
 
 ## ✒️ Autores
 
-* *Fiipe Padilha* <a href="https://br.linkedin.com/in/fdapadilha">fdapadilha</a>
+* *Filipe Padilha* <a href="https://br.linkedin.com/in/fdapadilha">fdapadilha</a>
 * *Flora Barbosa* <a href="https://br.linkedin.com/in/flora-barbosa-santiago-a13b5512a">flora barbosa santiago</a>
 * *Lucas Lima* <a href="https://br.linkedin.com/in/lucas-lima-477377a">lucas lima</a>
 
